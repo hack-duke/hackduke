@@ -54,21 +54,27 @@
 <div class="frame-light" id="sponsors">
   <div class="container content text-center">
     <h1>Sponsors</h1>
+    <% @large_sponsors.each_slice(3) do |s1, s2, s3| %>
     <div class="row">
-      <% @large_sponsors.each do |s| %>
-      <%= render s %>
-      <% end %>
+      <%= render s1 if s1 %>
+      <%= render s2 if s2 %>
+      <%= render s3 if s3 %>
     </div>
+    <% end %>
+    <% @medium_sponsors.each_slice(3) do |s1, s2, s3| %>
     <div class="row">
-      <% @medium_sponsors.each do |s| %>
-      <%= render s %>
-      <% end %>
+      <%= render s1 if s1 %>
+      <%= render s2 if s2 %>
+      <%= render s3 if s3 %>
     </div>
+    <% end %>
+    <% @small_sponsors.each_slice(3) do |s1, s2, s3| %>
     <div class="row">
-      <% @small_sponsors.each do |s| %>
-      <%= render s %>
-      <% end %>
+      <%= render s1 if s1 %>
+      <%= render s2 if s2 %>
+      <%= render s3 if s3 %>
     </div>
+    <% end %>
     <div class="cta-wrapper">
       <h1>This sounds awesome! I want to</h1>
       <div class="btn-wrapper clearfix">
