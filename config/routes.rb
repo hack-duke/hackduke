@@ -24,6 +24,7 @@ Hackduke::Application.routes.draw do
   get '/courses', to: 'fall2015/courses#index'
   get '/tech-talks', to: 'fall2015/events#tech_talks'
   get '/schedule', to: 'fall2015/events#index'
+  get '/hackweek' => redirect('https://www.dropbox.com/s/5pg8sq1qjpvvpye/hackweekSchedule.pdf?dl=0')
   
   resources :organizers, only: [:index], :controller => 'fall2015/organizers'
  end
