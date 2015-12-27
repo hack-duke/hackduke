@@ -46,28 +46,24 @@
 <% if @large_sponsors != nil || @medium_sponsors != nil || @small_sponsors != nil %>
 <div class="frame-light" id="sponsors">
   <div class="container content text-center">
+  <div class="row">
     <h1>Sponsors</h1>
     <% @large_sponsors.each_slice(3) do |s1, s2, s3| %>
-    <div class="row">
       <%= render s1 if s1 %>
       <%= render s2 if s2 %>
       <%= render s3 if s3 %>
-    </div>
     <% end %>
     <% @medium_sponsors.each_slice(3) do |s1, s2, s3| %>
-    <div class="row">
       <%= render s1 if s1 %>
       <%= render s2 if s2 %>
       <%= render s3 if s3 %>
-    </div>
     <% end %>
     <% @small_sponsors.each_slice(3) do |s1, s2, s3| %>
-    <div class="row">
       <%= render s1 if s1 %>
       <%= render s2 if s2 %>
       <%= render s3 if s3 %>
-    </div>
     <% end %>
+  </div>
     <div class="cta-wrapper">
       <h1>This sounds awesome! I want to</h1>
       <div class="btn-wrapper clearfix">
