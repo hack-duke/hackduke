@@ -41,6 +41,9 @@ gem 'devise'
 # URL Validation
 gem "validate_url"
 
+# SQLite3
+gem 'sqlite3'
+
 # Better Errors
 group :development do
 	gem "better_errors"
