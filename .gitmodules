@@ -1,3 +1,4 @@
 [submodule "public/education"]
 	path = public/education
 	url = https://github.com/hack-duke/hackduke-education-landing
+	branch = gh-pages
